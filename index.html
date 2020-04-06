@@ -15,136 +15,42 @@
   <![endif]-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="style.css">
-    <style>
-    	body {
-    		background-image: url('http://www.studiomp4.hol.es/mob/css/bg.jpg');
-    		background-position: left top;
-    		background-repeat: no-repeat;
-    		background-size: cover;
-    		background-attachment: fixed;
-    	}
-
-    	ul.features {
-		  margin-left: 40px;
-		  height: auto;
-		  overflow: hidden;
-		  margin-bottom: 40px;
-		}
-
-		ul.features li {
-		  padding-left: 20px;
-		  color: #fff;
-		  font-weight: 400;
-		  text-shadow: 0 1px #000;
-		  font-size: 15px;
-		  font-family: 'Open Sans', sans-serif;
-		  line-height: 180%;
-		}
-
-		ul.features li a {
-			text-decoration: none;
-			color: #fa0ed7;
-		}
-
-		h1.page-title {
-		  font-family: 'Open Sans', sans-serif;
-		  line-height: 150%;
-		  border-bottom: 1px solid rgba(255,255,255,0.5);
-		  font-size: 32px;
-		  margin-top: 40px;
-		  margin-bottom: 40px;
-		  color: #fff;
-		  text-align: center;
-		  overflow: hidden;
-		}
-
-		div.text-container {
-			padding-top: 20px;
-			margin: 0 auto;
-			width: 800px;
-			
-		}
-
-		div.text-container div {
-			margin-top: 60px;
-			background: #000;
-			background: rgba(0,0,0,0.5);
-			box-shadow: 0 0 5px 1px rgba(0,0,0,0.32);
-			border: 1px solid rgba(0,0,0,0.3);
-			width: 100%;
-			height: auto;
-			overflow: hidden;
-			padding: 15px;
-		}
-
-		.hover-switcher {
-			clear: both;
-			height: 10px;
-			width: 100%;
-		}
-
-		span[class^="hover-color-"] {
-			height: 40px;
-			width: 100px;
-			display: block;
-			float: left;
-			margin: 0 11px;
-			box-shadow: 0 0 1px 0 #000;
-		}
-
-		span.hover-color-red {background-color: #DC143C;}
-		span.hover-color-orange {background-color: #ff620a;}
-		span.hover-color-green {background-color: #25d99a;}
-		span.hover-color-pink {background-color: #ff33e7;}
-		span.hover-color-applegreen {background-color: #0eae1a;}
-		span.hover-color-purple {background-color: #8730db;}
-		.yellow-theme {
-			background-color: yellow;
-		}
-    </style>
+  
 	
  
 </head>
 <body>
-	
-	<header class="css3aw-navigation-container yellow-theme">
-
-		<div class="css3aw-menu-container">
-			<input type="checkbox" id="css3aw-menu-icon">
-			<label for="css3aw-menu-icon">
-				<span class="css3aw-menu-dash"></span>
-				<span class="css3aw-menu-dash"></span>
-				<span class="css3aw-menu-dash"></span>
-			</label>
-			
-			<ul class="css3aw-sub-menu">
-				<li> <i class="fa fa-heart"></i> <a href="#">Our images</a></li>
-				<li> <i class="fa fa-heart"></i> <a href="#">Our fav memes</a></li>
-				<!-- <li><i class="fa fa-heart"></i><a href="#">Our fav images</a>
-					<ul>
-						<li><i class="fa fa-heart"></i><a href="#">Our fav songs</a></li>
-						<li><i class="fa fa-heart"></i><a href="#">Our Team</a></li>
-					</ul>
-				</li> -->
-				<li><i class="fa fa-heart"></i><a href="#">Our fav songs</a></li>
-				<li><i class="fa fa-heart"></i><a href="#">Our fav images</a></li>
-				<li><i class="fa fa-heart"></i><a href="#">Our Of A7 images</a></li>
-				<!-- <li><i class="fa fa-heart"></i><a href="#">Freebies</a></li>
-				<li><i class="fa fa-heart"></i><a href="#">Contact</a></li> -->
-			</ul>
-
-		</div>
-
-	   <!-- <div class="content">
-		<iframe width="500px" height="500px" frameborder="0" allowfullscreen
-		src="https://www.youtube.com/embed/7UOGuU8nMBA?autoplay=1">
-		</iframe>
-	   </div> -->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	  </div>
+	  
+	  <!-- Use any element to open the sidenav -->
+	  <span onclick="openNav()">open</span>
+	  
+	  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	  <div id="main">
+		...
+	  </div>
 
 
-	</header>
+    <script>
+		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
-
-    
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+	</script>
 </body> 
 </html>
