@@ -49,22 +49,26 @@
 	.sidenav a {font-size: 18px;}
   }
  .fa-bars {
-	 color: #000;
+	 color: #fff;
 	 font-size: 25px;
 	 margin-left: 20px;
 	 margin-top: 20px;
 	 cursor: pointer;
  }
  body {
-	 background-color: #f5f5f5;
+	background-color: #be3863;
+    color: #fff;
 	 font-family: 'Cairo', sans-serif;
  }
  img {
 	 max-width: 100%;
-	 margin-bottom: 40px;
  }
  h3 {
 	 text-align: center;
+	 margin-bottom: 20px;
+ }
+ #main img {
+	 margin-bottom: 40px;
  }
  .text {
    display: flex;
