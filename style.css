@@ -16,7 +16,7 @@
   .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 20px;
 	color: #000;
 	display: block;
 	transition: 0.3s;
@@ -25,7 +25,7 @@
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-	color: #f1f1f1;
+	color: red;
   }
   
   /* Position and style the close button (top right corner) */
@@ -61,5 +61,17 @@
  }
  img {
 	 max-width: 100%;
-	 margin-bottom: 20px;
+	 margin-bottom: 40px;
+ }
+ h3 {
+	 text-align: center;
+ }
+ .text {
+   display: flex;
+ }
+ .randow {
+	max-width: 50%;
+ }
+ p {
+	 text-align: center;
  }
